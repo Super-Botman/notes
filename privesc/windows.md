@@ -26,7 +26,7 @@ you can find some logins in this dir:
     - C:\Windows\system32\sysprep.inf
     - C:\Windows\system32\sysprep\sysprep.xml
 
-Back to top [`r fa("arrow-up", fill = "steelblue")`](#)
+[:arrow_up:](#)
   
 ### Powershell History
 
@@ -43,6 +43,7 @@ type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\Conso
 ```cmd
 type $Env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 ```
+[:arrow_up:](#)
 
 ### Saved Windows Credentials
 
@@ -57,6 +58,7 @@ change of user:
 ```cmd
 runas /savecred /user:admin cmd.exe
 ```
+[:arrow_up:](#)
 
 ### IIS Configuration
 
@@ -70,12 +72,14 @@ and you can use this command:
 ```cmd
 type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr connectionString
 ```
+[:arrow_up:](#)
 
 ### Retrieve Credentials PuTTY
 
 ```cmd
 reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
 ```
+[:arrow_up:](#)
 
 ### Scheduled Tasks
 
@@ -84,9 +88,11 @@ get scheduled tasks set:
 ```cmd
 schtasks /query /tn vulntask /fo list /v
 ```
+[:arrow_up:](#)
 
 ### check permissions of a file
 
 ```cmd
 icacls c:\tasks\schtask.bat
 ```
+[:arrow_up:](#)
