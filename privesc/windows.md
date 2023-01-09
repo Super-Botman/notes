@@ -25,8 +25,11 @@ you can find some logins in this dir:
     - C:\Windows\Panther\Unattend\Unattend.xml
     - C:\Windows\system32\sysprep.inf
     - C:\Windows\system32\sysprep\sysprep.xml
+<<<<<<< HEAD
 
 [:arrow_up:](#)
+=======
+>>>>>>> 9e73503 (add 'go to the top' arrows)
   
 ### Powershell History
 

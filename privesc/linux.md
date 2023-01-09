@@ -33,6 +33,8 @@
 
 The hostname command will return the hostname of the target machine. Although this value can easily be changed or have a relatively meaningless string (e.g. Ubuntu-3487340239), in some cases, it can provide information about the target system’s role within the corporate network (e.g. SQL-PROD-01 for a production SQL server).
 
+[:arrow_up:](#)
+
 ### uname
 
 ```bash
@@ -40,6 +42,8 @@ The hostname command will return the hostname of the target machine. Although th
 ```
 
 Will print system information giving us additional detail about the kernel used by the system. This will be useful when searching for any potential kernel vulnerabilities that could lead to privilege escalation.
+
+[:arrow_up:](#)
 
 ### version
 
@@ -49,6 +53,8 @@ Will print system information giving us additional detail about the kernel used 
 
 The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.
 
+[:arrow_up:](#)
+
 ### issue
 
 ```bash
@@ -56,6 +62,8 @@ The proc filesystem (procfs) provides information about the target system proces
 ```
 
 Systems can also be identified by looking at the /etc/issue file. This file usually contains some information about the operating system but can easily be customized or changes. While on the subject, any file containing system information can be customized or changed. For a clearer understanding of the system, it is always good to look at all of these.
+
+[:arrow_up:](#)
 
 ### ps
 
@@ -88,6 +96,8 @@ The output of the ps (Process Status) will show the following:
 
 The “ps” command provides a few useful options.
 
+[:arrow_up:](#)
+
 ### env
 
 ```bash
@@ -96,6 +106,8 @@ The “ps” command provides a few useful options.
 
 The env command will show environmental variables.
 
+[:arrow_up:](#)
+
 ### sudo
 
 ```bash
@@ -103,6 +115,8 @@ The env command will show environmental variables.
 ```
 
 The target system may be configured to allow users to run some (or all) commands with root privileges. The sudo -l command can be used to list all commands your user can run using sudo.
+
+[:arrow_up:](#)
 
 ### ls
 
@@ -124,6 +138,8 @@ show hiddens files of a directorie
     ls -al
 ```
 
+[:arrow_up:](#)
+
 ### id
 
 ```bash
@@ -133,6 +149,8 @@ show hiddens files of a directorie
 The id command will provide a general overview of the user’s privilege level and group memberships.
 
 It is worth remembering that the id command can also be used to obtain the same information for another user as seen below.
+
+[:arrow_up:](#)
 
 ### passwd
 
@@ -146,6 +164,8 @@ It is worth remembering that the id command can also be used to obtain the same 
 
 Reading the /etc/passwd file can be an easy way to discover users on the system.
 
+[:arrow_up:](#)
+
 ### history
 
 ```bash
@@ -153,6 +173,8 @@ Reading the /etc/passwd file can be an easy way to discover users on the system.
 ```
 
 Looking at earlier commands with the history command can give us some idea about the target system and, albeit rarely, have stored information such as passwords or usernames.
+
+[:arrow_up:](#)
 
 ### ifconfig
 
@@ -165,6 +187,8 @@ Looking at earlier commands with the history command can give us some idea about
 ```
 
 The target system may be a pivoting point to another network. The ifconfig command will give us information about the network interfaces of the system. The example below shows the target system has three interfaces (eth0, tun0, and tun1). Our attacking machine can reach the eth0 interface but can not directly access the two other networks.
+
+[:arrow_up:](#)
 
 ### netstat
 
@@ -218,6 +242,8 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
     netstat -ano
 ```
 
+[:arrow_up:](#)
+
 ### find
 
 Searching the target system for important information and potential privilege escalation vectors can be fruitful. The built-in “find” command is useful and worth keeping in your arsenal.
@@ -235,6 +261,8 @@ Searching the target system for important information and potential privilege es
    find / -amin -60 #find files accesses within the last hour (60 minutes)
    find / -size 50M #find files with a 50 MB size
 ```
+
+[:arrow_up:](#)
 
 ## automated-tools
 
@@ -265,6 +293,8 @@ local:
 
 [Linpeas github](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 
+[:arrow_up:](#)
+
 ### LES (Linux Exploit Suggester)
 
 ```bash
@@ -272,6 +302,8 @@ local:
 ```
 
 [LES github](https://github.com/mzet-/linux-exploit-suggester)
+
+[:arrow_up:](#)
 
 ### LSE (Linux Smart Enumeration)
 
@@ -281,6 +313,8 @@ local:
 
 [LSE](https://github.com/diego-treitos/linux-smart-enumeration)
 
+[:arrow_up:](#)
+
 ### LPC (Linux Priv Checker)
 
 ```bash
@@ -288,3 +322,5 @@ local:
 ```
 
 [LPC github](https://github.com/sleventyeleven/linuxprivchecker)
+
+[:arrow_up:](#)
