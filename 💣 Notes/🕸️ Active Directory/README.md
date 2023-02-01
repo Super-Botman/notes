@@ -11,3 +11,5 @@
 [force password reset at logon](force%20password%20reset%20at%20logon.md)
 
 [Managing Computers](Managing%20Computers/README.md)
+
+[Pentest ad schem](pentest_ad_dark.svg)
