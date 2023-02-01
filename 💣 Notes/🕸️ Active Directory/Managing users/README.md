@@ -1,5 +1,5 @@
 # Managing users
 
-[deleting OUs](deleting%20OUs/%21index.md)
+[deleting OUs](deleting%20OUs/%21README.md)
 
-[delegation](delegation/%21index.md)
+[delegation](delegation/%21README.md)
